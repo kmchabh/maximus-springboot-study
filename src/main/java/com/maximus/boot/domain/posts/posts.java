@@ -1,5 +1,6 @@
 package com.maximus.boot.domain.posts;
 
+import com.maximus.boot.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -14,7 +15,7 @@ import javax.persistence.Id;
 @NoArgsConstructor
 @Entity
 
-public class posts {
+public class posts extends BaseTimeEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
